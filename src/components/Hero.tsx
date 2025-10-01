@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
-// import heroImage from "@/assets/hero-main.jpg";
+import heroImage from "@/assets/hero-main.jpg";
 
 const Hero = () => {
   useEffect(() => {
@@ -15,7 +15,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center" 
-        // style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${heroImage})` }}
 
 
       >

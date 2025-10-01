@@ -14,12 +14,13 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center" 
+        className="absolute inset-0 z-0 bg-cover bg-right" 
         style={{ backgroundImage: `url(${heroImage})` }}
-
-
       >
+        {/* Left to right gradient for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/75"></div>
+        {/* Bottom fade to transparent */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
       </div>
       
       <div className="container mx-auto px-4 py-32 relative z-10">
